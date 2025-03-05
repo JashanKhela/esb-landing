@@ -7,7 +7,6 @@ import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { tr } from "framer-motion/client";
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -20,7 +19,7 @@ export const Hero = () => {
 
 
   return (
-    <section ref={heroRef} className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#3c69ac,#EAEEFE_50%)] overflow-x-clip text-white">
+    <section ref={heroRef} className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#3c69ac,#EAEEFE_50%)] overflow-x-clip text-white z-0">
       <div className="container">
         <div className="md:flex iteems-center">
           <div className="md:w-[478px]">
