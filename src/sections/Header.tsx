@@ -7,6 +7,7 @@ import CloseIcon from "../assets/close.svg";
 import Image from "next/image";
 
 export const Header = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

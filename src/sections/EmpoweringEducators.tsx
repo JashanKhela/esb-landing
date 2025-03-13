@@ -2,6 +2,7 @@ import Image from "next/image";
 import BookCover from "../assets/esbplanners-logo.png";
 import CheckIcon from "../assets/check.svg";
 import clsx from "clsx";
+import bookCoverImage from "@/assets/book-cover.png";
 
 const bookFeatures = [
   "Strategies for creating a cohesive teaching culture",
@@ -17,16 +18,16 @@ export const EmpoweringEducatorSection = () => {
         <div className="section-heading text-center">
           <h2 className="section-title">Empowering the Educator Within</h2>
           <p className="section-description mt-5">
-          Unlock the full potential of your teaching with proven strategies that foster collaboration, inspire student engagement, and build a dynamic, future-ready classroom. 'Empowering the Educator Within' equips you with actionable insights, leadership frameworks, and innovative approaches to transform your educational impact.
+          Unlock the full potential of your teaching with proven strategies that foster collaboration, inspire student engagement, and build a dynamic, future-ready classroom. 'Empowering the Educator Within' equips you with actionable insights, frameworks, and innovative approaches to transform your educational impact.
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center mt-10">
           <div className="lg:w-1/3 flex justify-center">
             <Image
-              src={"/esbplanners-logo.svg"}
+              src={bookCoverImage}
               alt="Empowering the Educator Within Book Cover"
-              width={200}
+              width={300}
               height={300}
               className="rounded-lg shadow-lg"
             />

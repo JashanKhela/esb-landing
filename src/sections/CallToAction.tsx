@@ -1,7 +1,7 @@
 "use client";
 import ArrowRight from "../assets/arrow-right.svg";
-import StarImage from "../assets/star.png";
-import SpringImage from "../assets/spring.png";
+import BookImage from "../assets/book.png";
+import TeacherImage from "../assets/teacher.png";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -26,8 +26,8 @@ export const CallToAction = () => {
             Plan smarter, collaborate effortlessly, and streamline your workflow with ESBPlanners. 
             Get started today and experience the difference.
           </p>
-          <motion.img src={StarImage.src} alt="Star" width={250} height={250} className="absolute -top-[20px] -left-[350px]" style={{ translateY: translateY }}/>
-          <motion.img src={SpringImage.src} alt="Spring" width={250} height={250} className="absolute -top-[2px] -right-[350px]" style={{ translateY: translateY }} />
+          <motion.img src={BookImage.src} alt="Star" width={300} height={300} className="absolute -top-[20px] -left-[350px]" style={{ translateY: translateY }}/>
+          <motion.img src={TeacherImage.src} alt="Spring" width={300} height={300} className="absolute -top-[2px] -right-[350px]" style={{ translateY: translateY }} />
         </div>
 
         <div className="flex justify-center gap-4 mt-10">

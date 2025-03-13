@@ -33,14 +33,14 @@ export const ProductShowcase = () => {
           </h2>
 
           <p className="section-description mt-5">
-            ESBPlanners gives you the tools to build dynamic lesson plans, manage multiple classes with ease, and collaborate with fellow educators. Simplify your planning process and focus on what truly matters—teaching.
+          Empower your teaching with intuitive tools designed to streamline lesson planning, classroom management, and educator collaboration. With ESBPlanners, you can create structured, engaging lessons, organize multiple classes effortlessly, and work seamlessly with colleagues—all in one powerful platform. Spend less time on logistics and more time making an impact.
           </p>
         </div>
 
         <div className="relative">
           <Image src={productImage} alt="ESBPlanners App Screenshot" className="mt-10 rounded-lg" />
-          <motion.img src={pyramidImage.src} alt="Decorative Pyramid" className="hidden md:block absolute -right-28 -top-32" height={250} width={250}  style={{ translateY: translateY }} />
-          <motion.img src={tubeImage.src} alt="Decorative Tube" className="hidden md:block absolute -left-36 -bottom-24" height={220} width={220} style={{ translateY: translateY }} />
+          {/* <motion.img src={pyramidImage.src} alt="Decorative Pyramid" className="hidden md:block absolute -right-28 -top-32" height={250} width={250}  style={{ translateY: translateY }} />
+          <motion.img src={tubeImage.src} alt="Decorative Tube" className="hidden md:block absolute -left-36 -bottom-24" height={220} width={220} style={{ translateY: translateY }} /> */}
         </div>
       </div>
     </section>

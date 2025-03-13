@@ -3,7 +3,8 @@
 import ArrowIcon from "@/assets/arrow-right.svg";
 import cogImage from "@/assets/cog.png";
 import Image from "next/image";
-import cylinderImage from "@/assets/cylinder.png";
+import cylinderImage from "@/assets/pencil.png";
+import teacherImage from "@/assets/meeting.png";
 import noodleImage from "@/assets/noodle.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -47,11 +48,12 @@ export const Hero = () => {
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1  relative">
             <motion.img
-              src={cogImage.src}
+              src={teacherImage.src}
               alt="Cog Image"
-              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
+              
+              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:-left-32"
               animate={{
-                translateY: [-30, 30],
+                translateY: [-5, 5],
               }}
               transition={{
                 duration: 3,
@@ -66,15 +68,15 @@ export const Hero = () => {
               width={220}
               height={220}
               className="hidden md:block -top-8 -left-32 md:absolute"
-              style={{ translateY: translateY }}
+              style={{ translateY: translateY, rotate: 30 }}
             />
-            <motion.img
+            {/* <motion.img
               src={noodleImage.src}
               alt="Noodle Image"
               width={220}
               className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
               style={{ translateY: translateY, rotate: 30 }}
-            />
+            /> */}
           </div>
         </div>
       </div>
