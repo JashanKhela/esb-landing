@@ -50,7 +50,7 @@ export const Footer = () => {
             Blog
           </a>
           <a
-            href="https://shala-books.com/esb-planners-demo.html"
+            href="https://calendly.com/admin-esbplanners/30min"
             className="text-esb-blue bg-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tighter transition duration-300 ease-in-out transform hover:bg-opacity-80 hover:scale-105 shadow-md hover:shadow-lg"
           >
             Book A Demo
