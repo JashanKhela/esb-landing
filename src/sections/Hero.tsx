@@ -5,7 +5,7 @@ import cogImage from "@/assets/cog.png";
 import Image from "next/image";
 import cylinderImage from "@/assets/pencil.png";
 import teacherImage from "@/assets/meeting.png";
-import onlineLearningImage from "@/assets/home-hero.png";
+import onlineLearningImage from "@/assets/home-hero2.png";
 import noodleImage from "@/assets/noodle.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";

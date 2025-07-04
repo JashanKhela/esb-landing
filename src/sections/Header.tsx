@@ -30,8 +30,8 @@ export const Header = () => {
             {/* Logo */}
             <Image
               src="/esbplanners-logo.svg"
-              width={70}
-              height={70}
+              width={100}
+              height={100}
               alt="ESBPlanners Logo"
             />
 
