@@ -43,7 +43,7 @@ export const EmpoweringEducatorSection = () => {
             </ul>
             <div className="mt-8">
               <a
-                href="/public/esbplanners-logo.svg"
+                href="https://shala-books.com/empowering-the-educator-within.html"
                 className="btn btn-primary px-6 py-3 text-lg font-semibold"
               >
                 Learn More
