@@ -119,6 +119,13 @@ export const Header = () => {
               Testimonials
             </a>
             <a
+              href="https://esbplanners.app/login"
+              className="bg-esb-blue text-white px-6 py-3 rounded-lg text-center tracking-tighter transition duration-300 ease-in-out transform hover:bg-opacity-80 hover:scale-105 shadow-md hover:shadow-lg"
+              onClick={() => setMenuOpen(false)}
+            >
+              Login
+            </a>
+            <a
               href="https://calendly.com/admin-esbplanners/30min"
               className="bg-esb-blue text-white px-6 py-3 rounded-lg text-center tracking-tighter transition duration-300 ease-in-out transform hover:bg-opacity-80 hover:scale-105 shadow-md hover:shadow-lg"
               onClick={() => setMenuOpen(false)}
