@@ -7,7 +7,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export const CallToAction = () => {
-
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -16,22 +15,42 @@ export const CallToAction = () => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
-  
   return (
-    <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
+    >
       <div className="container">
         <div className="section-heading text-center relative">
-          <h2 className="section-title">Start Simplifying Your Lesson Planning Today</h2>
+          <h2 className="section-title">
+            Start Simplifying Your Lesson Planning Today
+          </h2>
           <p className="section-description mt-5">
-            Plan smarter, collaborate effortlessly, and streamline your workflow with ESBPlanners. 
-            Get started today and experience the difference.
+            Plan smarter, collaborate effortlessly, and streamline your workflow
+            with ESBPlanners. Get started today and experience the difference.
           </p>
-          <motion.img src={BookImage.src} alt="Star" width={300} height={300} className="absolute -top-[20px] -left-[350px]" style={{ translateY: translateY }}/>
-          <motion.img src={TeacherImage.src} alt="Spring" width={300} height={300} className="absolute -top-[2px] -right-[350px]" style={{ translateY: translateY }} />
+          <motion.img
+            src={BookImage.src}
+            alt="Star"
+            width={300}
+            height={300}
+            className="absolute -top-[20px] -left-[350px]"
+            style={{ translateY: translateY }}
+          />
+          <motion.img
+            src={TeacherImage.src}
+            alt="Spring"
+            width={300}
+            height={300}
+            className="absolute -top-[2px] -right-[350px]"
+            style={{ translateY: translateY }}
+          />
         </div>
 
         <div className="flex justify-center gap-4 mt-10">
-          <a className="btn btn-primary" href="https://esbplanners.com/login">Try for Free</a>
+          <a className="btn btn-primary" href="https://esbplanners.app/login">
+            Try for Free
+          </a>
           <a className="btn btn-text" href="mailto:support@esbplanners.com">
             <span>Contact Sales</span>
             <ArrowRight className="h-5 w-5 ml-1" />

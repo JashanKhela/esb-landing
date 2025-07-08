@@ -19,9 +19,11 @@ export const Hero = () => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
-
   return (
-    <section ref={heroRef} className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#3c69ac,#EAEEFE_50%)] overflow-x-clip text-white z-0">
+    <section
+      ref={heroRef}
+      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#3c69ac,#EAEEFE_50%)] overflow-x-clip text-white z-0"
+    >
       <div className="container">
         <div className="md:flex iteems-center">
           <div className="md:w-[478px]">
@@ -35,7 +37,7 @@ export const Hero = () => {
               manage schedules, and streamline your workflow with ease.
             </p>
             <div className="flex gap-3 items-center mt-[30px]">
-              <a className="btn" href="https://esbplanners.com/login">
+              <a className="btn" href="https://esbplanners.app/login">
                 Get Started For Free
               </a>
               <a
@@ -51,7 +53,6 @@ export const Hero = () => {
             <motion.img
               src={onlineLearningImage.src}
               alt="Cog Image"
-              
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:-left-32"
               animate={{
                 translateY: [-5, 5],

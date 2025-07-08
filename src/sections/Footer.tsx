@@ -46,7 +46,10 @@ export const Footer = () => {
             Testimonials
           </a>
 
-          <a href="https://shala-books.com/education-blog-home.html" className="hover:underline">
+          <a
+            href="https://shala-books.com/education-blog-home.html"
+            className="hover:underline"
+          >
             Blog
           </a>
           <a
@@ -99,7 +102,7 @@ export const Footer = () => {
         {/* Copyright Notice */}
         <p className="mt-6">
           &copy; 2025{" "}
-          <a href="https://esbplanners.com" className="hover:underline">
+          <a href="https://esbplanners.app" className="hover:underline">
             ESBPlanners
           </a>
           . All Rights Reserved.

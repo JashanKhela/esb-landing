@@ -7,18 +7,21 @@ import CloseIcon from "../assets/close.svg";
 import Image from "next/image";
 
 export const Header = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className={`sticky top-0 backdrop-blur-sm z-20 ${menuOpen ? "h-[500px]" : "h-auto"} `}>
+    <header
+      className={`sticky top-0 backdrop-blur-sm z-20 ${
+        menuOpen ? "h-[500px]" : "h-auto"
+      } `}
+    >
       {/* Top Bar */}
       <div className="flex justify-center items-center py-3 bg-esb-blue text-white gap-3">
         <p className="text-white/70 hidden md:block">
           Empower your teaching. Plan smarter. Collaborate effortlessly.
         </p>
         <div className="inline-flex gap-1 items-center">
-          <a href="https://esbplanners.com/login">Get Started For Free</a>
+          <a href="https://esbplanners.app/login">Get Started For Free</a>
           <ArrowRight className="w-4 h-4 inline-flex justify-center" />
         </div>
       </div>
@@ -48,10 +51,20 @@ export const Header = () => {
             <nav className="hidden md:flex gap-5 text-black/60 items-center font-medium">
               <a href="#about">Showcase</a>
               <a href="#features">Features</a>
-              <a href="https://shala-books.com/esb-planners-teachers.html">Teachers</a>
-              <a href="https://shala-books.com/esb-planners-schools.html">Schools</a>
+              <a href="https://shala-books.com/esb-planners-teachers.html">
+                Teachers
+              </a>
+              <a href="https://shala-books.com/esb-planners-schools.html">
+                Schools
+              </a>
               <a href="#pricing">Pricing</a>
               <a href="#testimonials">Testimonials</a>
+                            <a
+                href="https://esbplanners.app/login"
+                className="bg-esb-blue text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tighter transition duration-300 ease-in-out transform hover:bg-opacity-80 hover:scale-105 shadow-md hover:shadow-lg "
+              >
+                Login
+              </a>
               <a
                 href="https://calendly.com/admin-esbplanners/30min"
                 className="bg-esb-blue text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tighter transition duration-300 ease-in-out transform hover:bg-opacity-80 hover:scale-105 shadow-md hover:shadow-lg"

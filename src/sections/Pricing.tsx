@@ -36,7 +36,7 @@ const pricingTiers = [
     buttonText: "Upgrade At A Discount",
     popular: true,
     inverse: true,
-    yearly:true,
+    yearly: true,
     features: [
       "Discounted pricing",
       "Unlimited lesson planners",
@@ -55,7 +55,8 @@ export const Pricing = () => {
         <div className="section-heading">
           <h2 className="section-title">Choose the Right Plan for You.</h2>
           <p className="section-description mt-5">
-            Whether you are an individual teacher or a school administrator, we have a plan that fits your needs.
+            Whether you are an individual teacher or a school administrator, we
+            have a plan that fits your needs.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export const Pricing = () => {
               popular,
               inverse,
               features,
-              yearly
+              yearly,
             }) => (
               <div
                 key={title}
@@ -105,11 +106,11 @@ export const Pricing = () => {
                       inverse === true && "text-white/60"
                     )}
                   >
-                    /{yearly ? 'year' : 'month'}
+                    /{yearly ? "year" : "month"}
                   </span>
                 </div>
                 <a
-                  href="https://esbplanners.com/upgrade"
+                  href="https://esbplanners.app/upgrade"
                   className={clsx(
                     "btn btn-primary w-full mt-[30px]",
                     inverse === true && "bg-white text-esb-blue"
@@ -133,8 +134,12 @@ export const Pricing = () => {
           )}
         </div>
         <div className="mt-16 text-center">
-        <p className="section-description mt-5">
-          Whether you are an individual teacher, a school administrator, or part of a larger educational institution, we have a plan tailored to your needs. Our individual plans provide flexibility for educators, while schools and districts can benefit from customized group pricing. For bulk or school-wide pricing, contact our sales team.
+          <p className="section-description mt-5">
+            Whether you are an individual teacher, a school administrator, or
+            part of a larger educational institution, we have a plan tailored to
+            your needs. Our individual plans provide flexibility for educators,
+            while schools and districts can benefit from customized group
+            pricing. For bulk or school-wide pricing, contact our sales team.
           </p>
           <div className="mt-6">
             <a
@@ -145,7 +150,6 @@ export const Pricing = () => {
             </a>
           </div>
         </div>
-        
       </div>
     </section>
   );
